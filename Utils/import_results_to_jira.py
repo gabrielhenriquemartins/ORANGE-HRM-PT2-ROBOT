@@ -40,8 +40,8 @@ data = {
 #            Get values from command line        #
 # ---------------------------------------------- #
 def get_values_in_command_line():
-    global project_key, test_plan_key, JIRA, API_TOKEN, USER, client_id, client_secret, data
-    if len(sys.argv) == 8:
+    global project_key, test_plan_key, JIRA, API_TOKEN, USER, client_id, client_secret, file_path, xml_path, data
+    if len(sys.argv) == 10:
         project_key = sys.argv[1]
         print(f'Project Key: {project_key}')
         test_plan_key = sys.argv[2]
@@ -56,6 +56,10 @@ def get_values_in_command_line():
         print(f'Xray, Client ID: {client_id}')
         client_secret = sys.argv[7]
         print(f'Xray, Client Secret: {client_secret}')
+        file_path = sys.argv[8]
+        print(f'File Path: {file_path}')
+        xml_path = sys.argv[9]
+        print(f'XML Path: {xml_path}')
         data = {
             "info": {
                 "project": f"{project_key}",
