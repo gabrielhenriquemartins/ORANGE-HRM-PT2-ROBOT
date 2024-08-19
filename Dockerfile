@@ -16,6 +16,7 @@ ENV TZ=America/Sao_Paulo
 # Update and Install Python
 RUN apt-get update
 RUN apt-get install -y python3-pip
+RUN apt-get install -y dos2unix
 
 # Install RobotFramework and Browser Library, nodejs and libtoc
 RUN pip3 install robotframework
