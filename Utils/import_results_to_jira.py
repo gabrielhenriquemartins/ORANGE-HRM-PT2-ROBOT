@@ -63,7 +63,7 @@ def get_values_in_command_line():
         data = {
             "info": {
                 "project": f"{project_key}",
-                "summary": f"Automatic: Cypress Test Execution at {today}",
+                "summary": f"Automatic: Robot Test Execution at {today}",
                 "description": f"This execution is related to the project {project_key}, and realized at {today}",
                 "testPlanKey": f"{test_plan_key}"
             },
